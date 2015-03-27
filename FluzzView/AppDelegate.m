@@ -18,13 +18,13 @@
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
-    XXLogSetup();
+    YCLogSetup();
 
-    XXLogError(@"Paper jam");                             // Red
-    XXLogWarn(@"Toner is low");                           // Orange
-    XXLogInfo(@"Warming up printer (pre-customization)"); // Default (black)
-    XXLogDebug(@"Intializing protcol x26");               // Default (black)
-    XXLogVerbose(@"Intializing protcol x26");             // Default (black)
+    YCLogError(@"Paper jam");                             // Red
+    YCLogWarn(@"Toner is low");                           // Orange
+    YCLogInfo(@"Warming up printer (pre-customization)"); // Default (black)
+    YCLogDebug(@"Intializing protcol x26");               // Default (black)
+    YCLogVerbose(@"Intializing protcol x26");             // Default (black)
 
     return YES;
 } /* application */

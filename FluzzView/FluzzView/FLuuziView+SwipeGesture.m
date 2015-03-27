@@ -17,25 +17,25 @@
     {
         case UISwipeGestureRecognizerDirectionRight:
             {
-                XXLogInfo(@"swip to right");
+                YCLogInfo(@"swip to right");
             }
             break;
 
         case UISwipeGestureRecognizerDirectionLeft:
             {
-                XXLogInfo(@"swip to left");
+                YCLogInfo(@"swip to left");
             }
             break;
 
         case UISwipeGestureRecognizerDirectionUp:
             {
-                XXLogInfo(@"swip to up");
+                YCLogInfo(@"swip to up");
             }
             break;
 
         case UISwipeGestureRecognizerDirectionDown:
             {
-                XXLogInfo(@"swip to down");
+                YCLogInfo(@"swip to down");
             }
             break;
 

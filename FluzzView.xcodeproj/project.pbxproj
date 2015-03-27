@@ -19,6 +19,8 @@
 		5228AA471ABE8D8D00C0525A /* UIView+LayoutChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228AA461ABE8D8D00C0525A /* UIView+LayoutChain.m */; };
 		5228AA491ABEC61800C0525A /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228AA481ABEC61800C0525A /* PageView.xib */; };
 		5228AA4C1ABEC62D00C0525A /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228AA4B1ABEC62D00C0525A /* PageView.m */; };
+		52FE626C1AC4F47B0096B67D /* SLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE626A1AC4F47B0096B67D /* SLView.m */; };
+		52FE62701AC4F4B90096B67D /* NSObject+YCUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE626F1AC4F4B90096B67D /* NSObject+YCUserData.m */; };
 		7F4A485B1ABF14470034A8E9 /* FLuuziView+CardMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A485A1ABF14470034A8E9 /* FLuuziView+CardMode.m */; };
 		7F4A485E1ABF14630034A8E9 /* FLuuziPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A485D1ABF14630034A8E9 /* FLuuziPage.m */; };
 		7F4A48631ABF177D0034A8E9 /* FLuuziView+SlipMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A48621ABF177D0034A8E9 /* FLuuziView+SlipMode.m */; };
@@ -60,6 +62,12 @@
 		5228AA4A1ABEC62D00C0525A /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
 		5228AA4B1ABEC62D00C0525A /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
 		5241FCCB1ABE798600158FAF /* FluuzViewDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FluuzViewDefine.h; sourceTree = "<group>"; };
+		52FE62691AC4F47B0096B67D /* SLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLView.h; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/SLView.h; sourceTree = "<group>"; };
+		52FE626A1AC4F47B0096B67D /* SLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLView.m; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/SLView.m; sourceTree = "<group>"; };
+		52FE626B1AC4F47B0096B67D /* HZIPPageViewSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HZIPPageViewSelection.h; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/HZIPPageViewSelection.h; sourceTree = "<group>"; };
+		52FE626E1AC4F4B90096B67D /* NSObject+YCUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YCUserData.h"; path = "../objc/ddyuanchuang/YuanChuang/YuanChuang/App/extra/Foundation/NSObject+YCUserData.h"; sourceTree = "<group>"; };
+		52FE626F1AC4F4B90096B67D /* NSObject+YCUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YCUserData.m"; path = "../objc/ddyuanchuang/YuanChuang/YuanChuang/App/extra/Foundation/NSObject+YCUserData.m"; sourceTree = "<group>"; };
+		52FE62711AC4F5A90096B67D /* FluzzView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FluzzView-Prefix.pch"; sourceTree = "<group>"; };
 		7F4A48591ABF14470034A8E9 /* FLuuziView+CardMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLuuziView+CardMode.h"; sourceTree = "<group>"; };
 		7F4A485A1ABF14470034A8E9 /* FLuuziView+CardMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLuuziView+CardMode.m"; sourceTree = "<group>"; };
 		7F4A485C1ABF14630034A8E9 /* FLuuziPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLuuziPage.h; sourceTree = "<group>"; };
@@ -96,9 +104,6 @@
 		52120F1A1ABE6759005112C7 = {
 			isa = PBXGroup;
 			children = (
-				5228AA4A1ABEC62D00C0525A /* PageView.h */,
-				5228AA4B1ABEC62D00C0525A /* PageView.m */,
-				5228AA481ABEC61800C0525A /* PageView.xib */,
 				52120F251ABE6759005112C7 /* FluzzView */,
 				52120F3F1ABE6759005112C7 /* FluzzViewTests */,
 				52120F241ABE6759005112C7 /* Products */,
@@ -119,6 +124,7 @@
 		52120F251ABE6759005112C7 /* FluzzView */ = {
 			isa = PBXGroup;
 			children = (
+				52FE62681AC4F46E0096B67D /* PageView */,
 				52120F581ABE68E7005112C7 /* FluzzView */,
 				52120F2A1ABE6759005112C7 /* AppDelegate.h */,
 				52120F2B1ABE6759005112C7 /* AppDelegate.m */,
@@ -137,6 +143,7 @@
 			children = (
 				52120F271ABE6759005112C7 /* Info.plist */,
 				52120F281ABE6759005112C7 /* main.m */,
+				52FE62711AC4F5A90096B67D /* FluzzView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -200,6 +207,30 @@
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		52FE62681AC4F46E0096B67D /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				52FE626E1AC4F4B90096B67D /* NSObject+YCUserData.h */,
+				52FE626F1AC4F4B90096B67D /* NSObject+YCUserData.m */,
+				52FE626D1AC4F47F0096B67D /* SLView */,
+				5228AA4A1ABEC62D00C0525A /* PageView.h */,
+				5228AA4B1ABEC62D00C0525A /* PageView.m */,
+				5228AA481ABEC61800C0525A /* PageView.xib */,
+			);
+			name = PageView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		52FE626D1AC4F47F0096B67D /* SLView */ = {
+			isa = PBXGroup;
+			children = (
+				52FE62691AC4F47B0096B67D /* SLView.h */,
+				52FE626A1AC4F47B0096B67D /* SLView.m */,
+				52FE626B1AC4F47B0096B67D /* HZIPPageViewSelection.h */,
+			);
+			name = SLView;
 			sourceTree = "<group>";
 		};
 		7F4A486A1ABF92340034A8E9 /* Private */ = {
@@ -297,6 +328,7 @@
 				TargetAttributes = {
 					52120F221ABE6759005112C7 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ZTW9XPA927;
 					};
 					52120F3B1ABE6759005112C7 = {
 						CreatedOnToolsVersion = 6.2;
@@ -385,8 +417,10 @@
 				5228AA471ABE8D8D00C0525A /* UIView+LayoutChain.m in Sources */,
 				5228AA4C1ABEC62D00C0525A /* PageView.m in Sources */,
 				7F4A48691ABF191E0034A8E9 /* FLuuziView+SwipeGesture.m in Sources */,
+				52FE62701AC4F4B90096B67D /* NSObject+YCUserData.m in Sources */,
 				52120F2F1ABE6759005112C7 /* ViewController.m in Sources */,
 				7F4A485E1ABF14630034A8E9 /* FLuuziPage.m in Sources */,
+				52FE626C1AC4F47B0096B67D /* SLView.m in Sources */,
 				52120F5F1ABE6905005112C7 /* FLuzzView.m in Sources */,
 				7F4A48661ABF190F0034A8E9 /* FLuuziView+PanGeture.m in Sources */,
 				52120F2C1ABE6759005112C7 /* AppDelegate.m in Sources */,
@@ -515,6 +549,9 @@
 			baseConfigurationReference = 2319EC07D7A4A844153AE7B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$PROJECT/$PROJECT-Prefix.pch";
 				INFOPLIST_FILE = FluzzView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +563,9 @@
 			baseConfigurationReference = 27F642A7AF9A6BD938161103 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$PROJECT/$PROJECT-Prefix.pch";
 				INFOPLIST_FILE = FluzzView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

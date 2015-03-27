@@ -9,8 +9,9 @@
 #import "FLuzzView.h"
 
 @interface FLuzzView (CardMode)
-- (void)card_finishedDragWithOffset:(CGFloat)offset;
+- (void)card_setupPageView:(FLuuziPage*)pageView offset:(NSInteger)offsetFromCenter;
+
 - (void)card_dragingWithOffset:(CGFloat)offsetX;
 
-- (void)card_setupPageView:(FLuuziPage*)pageView offset:(NSInteger)offsetFromCenter;
+- (void)card_finishedDragWithOffset:(CGFloat)offset velocity:(CGPoint)velocity;
 @end

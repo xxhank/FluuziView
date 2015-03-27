@@ -11,5 +11,5 @@
 @interface FLuzzView (SlipMode)
 - (void)slip_setupPageView:(FLuuziPage*)pageView offset:(NSInteger)offsetFromCenter;
 - (void)slip_dragingWithOffset:(CGFloat)offsetX;
-- (void)slip_finishedDragWithOffset:(CGFloat)offset;
+- (void)slip_finishedDragWithOffset:(CGFloat)offset velocity:(CGPoint)velocity;
 @end

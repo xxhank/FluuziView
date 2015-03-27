@@ -79,7 +79,7 @@
     }
 } /* cardmode_dragingWithOffset */
 
-- (void)card_finishedDragWithOffset:(CGFloat)offset
+- (void)card_finishedDragWithOffset:(CGFloat)offset velocity:(CGPoint)velocity
 {
     CGFloat width = CGRectGetWidth(self.bounds);
 

@@ -15,7 +15,7 @@
 
 - (void)pan:(UIPanGestureRecognizer*)gesture
 {
-    XXLogInfo ( @"%@", @(gesture.state) );
+    // YCLogInfo ( @"%@", @(gesture.state) );
     switch (gesture.state)
     {
         case UIGestureRecognizerStateBegan:
@@ -50,8 +50,9 @@
                     // return;
                 }
 
-                CGFloat offset = ABS(swipeGesturePoint.x - self.swipeGestureBegin.x);
-                [self dragFinisehdWithOffset:offset];
+                CGFloat offset   = ABS(swipeGesturePoint.x - self.swipeGestureBegin.x);
+                CGPoint velocity = [gesture velocityInView:self];
+                [self dragFinisehdWithOffset:offset velocity:velocity ];
             };
             break;
 
@@ -63,9 +64,9 @@
                 {
                     // return;
                 }
-
-                CGFloat offset = ABS(swipeGesturePoint.x - self.swipeGestureBegin.x);
-                [self dragFinisehdWithOffset:offset];
+                CGPoint velocity = [gesture velocityInView:self];
+                CGFloat offset   = ABS(swipeGesturePoint.x - self.swipeGestureBegin.x);
+                [self dragFinisehdWithOffset:offset velocity:velocity];
             }
             break;
 
@@ -99,19 +100,19 @@
     } /* switch */
 }     /* dragingWithOffset */
 
-- (void)dragFinisehdWithOffset:(CGFloat)offset
+- (void)dragFinisehdWithOffset:(CGFloat)offset velocity:(CGPoint)velocity
 {
     switch (self.mode)
     {
         case FLuuziViewModeSlip:
             {
-                [self slip_finishedDragWithOffset:offset];
+                [self slip_finishedDragWithOffset:offset velocity:velocity];
             }
             break;
 
         case FLuuziViewModeCard:
             {
-                [self card_finishedDragWithOffset:offset];
+                [self card_finishedDragWithOffset:offset velocity:velocity];
             }
             break;
 

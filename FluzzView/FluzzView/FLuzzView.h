@@ -33,13 +33,14 @@ typedef NS_ENUM (NSUInteger, FLuuziViewMode)
 };
 
 @interface FLuzzView : UIView
-@property (nonatomic, weak) id<FLuuziViewDataSource> dataSource;
-@property (nonatomic, weak) id<FLuuziViewDelegate>   delegate;
-@property (nonatomic, strong) NSIndexPath           *current;
-@property (nonatomic, assign) FLuuziViewMode         mode;
-
+@property (nonatomic, weak) id<FLuuziViewDataSource>    dataSource;
+@property (nonatomic, weak) id<FLuuziViewDelegate>      delegate;
+@property (nonatomic, strong) NSIndexPath              *current;
+@property (nonatomic, assign) FLuuziViewMode            mode;
+@property (nonatomic, readonly) UIPanGestureRecognizer *panGesture;          ///< 拖动手势
 - (void)reloadData;
 - (void)setCurrent:(NSIndexPath*)current animate:(BOOL)animate;
+- (NSIndexPath*)indexPathOfPageView:(FLuuziPage*)pageView;
 @end
 
 #define FLuuziViewAnimationDuration .3

@@ -41,6 +41,7 @@
 
 @implementation FLuzzView
 {
+    BOOL _forceReload;/// 是否强制加载页面
 }
 
 - (void)awakeFromNib
@@ -50,21 +51,38 @@
 
 - (void)initialize
 {
-    _current       = [NSIndexPath indexPathForRow:0 inSection:0];
-    _pageViews     = [NSMutableDictionary dictionary];
-    _reusableViews = [NSMutableArray array];
-    _swipeGesture  = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    _current                           = [NSIndexPath indexPathForRow:0 inSection:0];
+    _pageViews                         = [NSMutableDictionary dictionary];
+    _reusableViews                     = [NSMutableArray array];
+    _swipeGesture                      = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     [self addGestureRecognizer:_swipeGesture];
 
-    _panGesture    = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    _panGesture                        = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    _panGesture.minimumNumberOfTouches = 1;
+    _panGesture.maximumNumberOfTouches = 1;
     [self addGestureRecognizer:_panGesture];
-}
+} /* initialize */
 
 #pragma mark - cache and reuse
 + (NSString*)keyForIndexPath:(NSIndexPath*)indexPath
 {
     return [NSString stringWithFormat:@"%ld-%ld", (long) indexPath.section, (long) indexPath.row];
 }
+
++ (NSIndexPath*)indexPathForKey:(NSString*)key
+{
+    NSArray *parts = [key componentsSeparatedByString:@"-"];
+
+    if (parts.count == 2)
+    {
+        NSUInteger section = [parts[0] integerValue];
+        NSUInteger row     = [parts[1] integerValue];
+
+        return [NSIndexPath indexPathForRow:row inSection:section];
+    }
+
+    return nil;
+} /* indexPathForKey */
 
 - (void)cacheView:(id)view atIndexPath:(NSIndexPath*)indexPath
 {
@@ -241,6 +259,21 @@
 } /* prevPageIndex */
 
 #pragma mark - pageAtIndexPath
+- (NSIndexPath*)indexPathOfPageView:(FLuuziPage*)pageView
+{
+    __block NSIndexPath *result = nil;
+
+    [_pageViews enumerateKeysAndObjectsUsingBlock: ^(id key, id obj, BOOL *stop) {
+        if (pageView == obj)
+        {
+            result = [[self class] indexPathForKey:key];
+            *stop = YES;
+        }
+    }];
+
+    return result;
+} /* indexPathOfPage */
+
 - (FLuuziPage*)pageAtIndexPath:(NSIndexPath*)indexPath
 {
     if (!indexPath)
@@ -258,6 +291,14 @@
 
         [self addSubview:pageView];
     }
+    else
+    {
+        if (_forceReload)
+        {
+            pageView = [self.dataSource fluuzView:self pageViewAtIndexPath:indexPath reuseView:pageView];
+        }
+    }
+
 
     return pageView;
 } /* pageAtIndexPath */
@@ -308,9 +349,11 @@
         return;
     }
 
+    _forceReload = YES;
     NSIndexPath *current = _current;
-    _current = nil;
+    _current     = nil;
     [self setCurrent:current animate:NO];
+    _forceReload = NO;
 } /* reloadData */
 
 - (void)recycleViews
@@ -349,15 +392,15 @@
         [self addSubview:currentView];
         [self setupPageView:currentView offset:0];
 
-        [self  pageWillAppear:currentView atIndexPath:currentIndex];
-        [self  pageDidAppear:currentView atIndexPath:currentIndex];
+        [self pageWillAppear:currentView atIndexPath:currentIndex];
+        [self pageDidAppear:currentView atIndexPath:currentIndex];
 
 
         NSIndexPath *nextIndexPath = [self nextPageIndex:currentIndex];
         FLuuziPage  *nextView      = [self pageAtIndexPath:nextIndexPath];
         [self insertSubview:nextView belowSubview:currentView];
         [self setupPageView:nextView offset:1];
-        [self  pageWillAppear:nextView atIndexPath:nextIndexPath];
+        [self pageWillAppear:nextView atIndexPath:nextIndexPath];
 
 
         NSIndexPath *prevIndexPath = [self prevPageIndex:currentIndex];

@@ -53,7 +53,7 @@
         pageView.leadingContraint = pageView.layout_leading.lastConstraint;
     }
 
-    XXLogInfo(@"%@ %ld:%ld %ld %@ ", NSStringFromSelector(_cmd), (long) self.current.section, (long) self.current.row, (long) offsetFromCenter, pageView);
+    YCLogInfo(@"%@ %ld:%ld %ld %@ ", NSStringFromSelector(_cmd), (long) self.current.section, (long) self.current.row, (long) offsetFromCenter, pageView);
 } /* setupPageView */
 
 - (void)slip_dragingWithOffset:(CGFloat)offsetX
@@ -92,7 +92,7 @@
     }
 } /* cardmode_dragingWithOffset */
 
-- (void)slip_finishedDragWithOffset:(CGFloat)offset
+- (void)slip_finishedDragWithOffset:(CGFloat)offset velocity:(CGPoint)velocity
 {
     CGFloat width = CGRectGetWidth(self.bounds);
 
@@ -109,7 +109,7 @@
 
                 if (prevIndex)
                 {
-                    if ( offset > (width / 2.0) )
+                    if ( ( offset > (width / 2.0) ) || (ABS(velocity.x) > 100) )
                     {
                         [self animationToPrevPage];
                     }
@@ -132,7 +132,7 @@
 
                 if (nextIndex)
                 {
-                    if ( offset > (width / 2.0) )
+                    if ( ( offset > (width / 2.0) ) || (ABS(velocity.x) > 100) )
                     {
                         [self animationToNextPage];
                     }
