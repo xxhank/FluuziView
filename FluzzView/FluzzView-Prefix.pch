@@ -1,10 +1,11 @@
 //
-//  FluzzView-Prefix.pch
-//  FluzzView
+// FluzzView-Prefix.pch
+// FluzzView
 //
-//  Created by wangchaojs02 on 15/3/27.
-//  Copyright (c) 2015年 wangchaojs02. All rights reserved.
+// Created by wangchaojs02 on 15/3/27.
+// Copyright (c) 2015年 wangchaojs02. All rights reserved.
 //
 
 
 #import "FluuzViewDefine.h"
+#import "NSObject+YCUserData.h"
