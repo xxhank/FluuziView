@@ -53,7 +53,7 @@
         pageView.leadingContraint = pageView.layout_leading.lastConstraint;
     }
 
-    YCLogInfo(@"%@ %ld:%ld %ld %@ ", NSStringFromSelector(_cmd), (long) self.current.section, (long) self.current.row, (long) offsetFromCenter, pageView);
+    // YCLogInfo(@"%@ %ld:%ld %ld %@ ", NSStringFromSelector(_cmd), (long) self.current.section, (long) self.current.row, (long) offsetFromCenter, pageView);
 } /* setupPageView */
 
 - (void)slip_dragingWithOffset:(CGFloat)offsetX
