@@ -24,8 +24,12 @@
 #endif
 
 #ifndef WEAK_OBJ
-    #define WEAK_OBJ(obj) __weak typeof(obj)     __weak_##obj__     = obj;
-    #define STRONG_OBJ(obj) __strong typeof ( __weak_##obj__  ) obj = __weak_##obj__;
+    #define WEAK_OBJ(obj) __weak typeof(obj)     __weak_##obj##__     = obj;
+    #define STRONG_OBJ(obj) __strong typeof ( __weak_##obj##__  ) obj = __weak_##obj##__;
+#endif
+
+#ifndef RANDOM
+    #define RANDOM(minimum, maximum) arc4random_uniform( (maximum) - (minimum) ) + (minimum)
 #endif
 
 #ifndef YCLog
