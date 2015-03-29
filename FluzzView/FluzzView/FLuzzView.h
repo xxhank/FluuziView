@@ -41,6 +41,9 @@ typedef NS_ENUM (NSUInteger, FLuuziViewMode)
 - (void)reloadData;
 - (void)setCurrent:(NSIndexPath*)current animate:(BOOL)animate;
 - (NSIndexPath*)indexPathOfPageView:(FLuuziPage*)pageView;
+
+- (NSIndexPath*)prevPageIndex:(NSIndexPath*)currentIndex;
+- (NSIndexPath*)nextPageIndex:(NSIndexPath*)currentIndex;
 @end
 
 #define FLuuziViewAnimationDuration .3

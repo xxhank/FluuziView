@@ -381,6 +381,11 @@
     _pageViews = pageViews;
 } /* reuseViews */
 
+- (void)setCurrent:(NSIndexPath*)current
+{
+    [self setCurrent:current animate:NO];
+}
+
 - (void)setCurrent:(NSIndexPath*)current animate:(BOOL)animate
 {
     if (!_current || !animate)
