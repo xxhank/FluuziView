@@ -12,7 +12,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD8-ae-JYC" userLabel="Label-Content">
                     <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                    <mutableString key="text">我的祖父叫胡国华，胡家祖上是十里八乡有名的大地主，最辉煌的时期在城里买了三条胡同相连的四十多间宅子，其间也曾出过一些当官的和经商的，捐过前清的粮台、槽运的帮办。
+                    <string key="text">我的祖父叫胡国华，胡家祖上是十里八乡有名的大地主，最辉煌的时期在城里买了三条胡同相连的四十多间宅子，其间也曾出过一些当官的和经商的，捐过前清的粮台、槽运的帮办。
 
 民谚有云：“富不过三代。”这话是非常有道理的，家里纵然有金山银山，也架不住败家子孙的挥霍。
 
@@ -86,13 +86,13 @@
     还没等保安队长发话，旁边那个军阀就感叹不已的对胡国华说道：“他奶奶的，不忘恩是仁，不负心是义，对老鼠尚且如此，何况对人呢？我念你仁义，又看你无依无靠，日后就随我从军做个副官吧。”
     枪杆子就是政权，乱世之中，带兵的人说的话就是王法，军阀头子吩咐手下，把那个王二杠子用鞭子抽一顿给胡国华出气，又放了胡国华回家安葬老鼠，胡国华用木盒盛殓了老鼠的尸体，挖个坑埋了，哭了半日，就去投奔了那个军阀头子。
     常言说得好：饿时吃糠甜如蜜，饱时吃蜜都不甜。人到了穷苦僚倒之时，别人就是给他一碗粥、一块饼也会感恩戴德，何况老鼠赠送给胡国华那么多的钱财，当然老鼠的钱也都是偷来的。圣人说渴死不饮盗泉之水，不过那是至圣至贤之人的品德标准，古人尚且难以做到，何况胡国华这样的庸人呢？以前听说在房中吸烟，时间久了屋内的苍蝇老鼠也会上瘾，此言非虚。
-</mutableString>
+</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXj-cW-oZD">
-                    <rect key="frame" x="278" y="0.0" width="42" height="21"/>
+                    <rect key="frame" x="278" y="0.0" width="42" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -101,6 +101,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Section Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncy-s9-QnV" userLabel="Label-SectionLoading">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Page Content..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq8-9H-LGh" userLabel="Label-PageLoading">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -109,13 +123,21 @@
                 <constraint firstItem="aXj-cW-oZD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2kB-jI-fcA"/>
                 <constraint firstAttribute="trailing" secondItem="wD8-ae-JYC" secondAttribute="trailing" id="4Av-tD-VrK"/>
                 <constraint firstAttribute="trailing" secondItem="aXj-cW-oZD" secondAttribute="trailing" id="5nI-Mn-jiU"/>
+                <constraint firstAttribute="bottom" secondItem="ncy-s9-QnV" secondAttribute="bottom" id="5ww-gE-uJn"/>
+                <constraint firstAttribute="trailing" secondItem="yq8-9H-LGh" secondAttribute="trailing" id="Ak4-CK-Mvn"/>
                 <constraint firstItem="dKY-Xx-6we" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gmt-ia-4oh"/>
                 <constraint firstItem="dKY-Xx-6we" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jh5-3X-Rb9"/>
+                <constraint firstAttribute="bottom" secondItem="yq8-9H-LGh" secondAttribute="bottom" id="Kjp-U7-K8y"/>
+                <constraint firstItem="ncy-s9-QnV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PhT-t7-ZUd"/>
+                <constraint firstItem="yq8-9H-LGh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TYa-6H-sfW"/>
+                <constraint firstAttribute="trailing" secondItem="ncy-s9-QnV" secondAttribute="trailing" id="eID-4R-gUK"/>
+                <constraint firstItem="yq8-9H-LGh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jHf-RY-ojk"/>
                 <constraint firstAttribute="bottom" secondItem="dKY-Xx-6we" secondAttribute="bottom" id="lzs-bi-F9p"/>
                 <constraint firstItem="wD8-ae-JYC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="p1a-Vu-fh2"/>
                 <constraint firstAttribute="trailing" secondItem="dKY-Xx-6we" secondAttribute="trailing" id="qSK-K2-C3T"/>
                 <constraint firstAttribute="centerX" secondItem="wD8-ae-JYC" secondAttribute="centerX" id="vbR-dd-2iW"/>
                 <constraint firstItem="wD8-ae-JYC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xYj-KK-R4i"/>
+                <constraint firstItem="ncy-s9-QnV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y8S-nK-GB4"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -129,6 +151,8 @@
                 <outlet property="contentLabel" destination="wD8-ae-JYC" id="xtM-ho-juy"/>
                 <outlet property="indexLabel" destination="aXj-cW-oZD" id="9a5-Ea-8ED"/>
                 <outlet property="markView" destination="dKY-Xx-6we" id="4zE-kU-zIs"/>
+                <outlet property="pageLoadingIndicatorView" destination="yq8-9H-LGh" id="9em-69-5Je"/>
+                <outlet property="sectionLoadingIndicatorView" destination="ncy-s9-QnV" id="ggN-aP-7ym"/>
             </connections>
             <point key="canvasLocation" x="496" y="432"/>
         </view>

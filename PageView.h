@@ -29,6 +29,8 @@
 @property (nonatomic, weak) id<PageViewDelegate>   delegate;
 @property (nonatomic, weak) id<PageViewDataSource> dataSource;
 
+@property (weak, nonatomic) IBOutlet UILabel *sectionLoadingIndicatorView;
+@property (weak, nonatomic) IBOutlet UILabel *pageLoadingIndicatorView;
 + (instancetype)pageView;
 
 @end
