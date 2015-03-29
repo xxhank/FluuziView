@@ -19,6 +19,14 @@
 		5228AA471ABE8D8D00C0525A /* UIView+LayoutChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228AA461ABE8D8D00C0525A /* UIView+LayoutChain.m */; };
 		5228AA491ABEC61800C0525A /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228AA481ABEC61800C0525A /* PageView.xib */; };
 		5228AA4C1ABEC62D00C0525A /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228AA4B1ABEC62D00C0525A /* PageView.m */; };
+		52590AA11AC80F99002191ED /* DataSourceWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 52590AA01AC80F99002191ED /* DataSourceWorker.m */; };
+		52590AA41AC81010002191ED /* DataSourceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 52590AA31AC81010002191ED /* DataSourceRequest.m */; };
+		52590AA71AC810AE002191ED /* AsynchronousData.m in Sources */ = {isa = PBXBuildFile; fileRef = 52590AA61AC810AE002191ED /* AsynchronousData.m */; };
+		52590AAA1AC81110002191ED /* ContentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52590AA91AC81110002191ED /* ContentLoader.m */; };
+		52A6AEEB1AC7A5EC00101A42 /* UIPanGestureRecognizerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A6AEEA1AC7A5EC00101A42 /* UIPanGestureRecognizerEx.m */; };
+		52A6AEFC1AC7BDB500101A42 /* ViewController+Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A6AEFB1AC7BDB500101A42 /* ViewController+Mark.m */; };
+		52A6AF001AC7BF0200101A42 /* ViewController+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A6AEFF1AC7BF0200101A42 /* ViewController+Gesture.m */; };
+		52A6AF031AC7DF2800101A42 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A6AF021AC7DF2800101A42 /* DataSource.m */; };
 		52FE626C1AC4F47B0096B67D /* SLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE626A1AC4F47B0096B67D /* SLView.m */; };
 		52FE62701AC4F4B90096B67D /* NSObject+YCUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE626F1AC4F4B90096B67D /* NSObject+YCUserData.m */; };
 		7F4A485B1ABF14470034A8E9 /* FLuuziView+CardMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A485A1ABF14470034A8E9 /* FLuuziView+CardMode.m */; };
@@ -62,6 +70,23 @@
 		5228AA4A1ABEC62D00C0525A /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
 		5228AA4B1ABEC62D00C0525A /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
 		5241FCCB1ABE798600158FAF /* FluuzViewDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FluuzViewDefine.h; sourceTree = "<group>"; };
+		52590A9F1AC80F99002191ED /* DataSourceWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceWorker.h; sourceTree = "<group>"; };
+		52590AA01AC80F99002191ED /* DataSourceWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceWorker.m; sourceTree = "<group>"; };
+		52590AA21AC81010002191ED /* DataSourceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceRequest.h; sourceTree = "<group>"; };
+		52590AA31AC81010002191ED /* DataSourceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceRequest.m; sourceTree = "<group>"; };
+		52590AA51AC810AE002191ED /* AsynchronousData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousData.h; sourceTree = "<group>"; };
+		52590AA61AC810AE002191ED /* AsynchronousData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousData.m; sourceTree = "<group>"; };
+		52590AA81AC81110002191ED /* ContentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentLoader.h; sourceTree = "<group>"; };
+		52590AA91AC81110002191ED /* ContentLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentLoader.m; sourceTree = "<group>"; };
+		52A6AEE91AC7A5EC00101A42 /* UIPanGestureRecognizerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPanGestureRecognizerEx.h; sourceTree = "<group>"; };
+		52A6AEEA1AC7A5EC00101A42 /* UIPanGestureRecognizerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPanGestureRecognizerEx.m; sourceTree = "<group>"; };
+		52A6AEFA1AC7BDB500101A42 /* ViewController+Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Mark.h"; sourceTree = "<group>"; };
+		52A6AEFB1AC7BDB500101A42 /* ViewController+Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Mark.m"; sourceTree = "<group>"; };
+		52A6AEFD1AC7BE2000101A42 /* ViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_Private.h; sourceTree = "<group>"; };
+		52A6AEFE1AC7BF0200101A42 /* ViewController+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Gesture.h"; sourceTree = "<group>"; };
+		52A6AEFF1AC7BF0200101A42 /* ViewController+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Gesture.m"; sourceTree = "<group>"; };
+		52A6AF011AC7DF2800101A42 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		52A6AF021AC7DF2800101A42 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		52FE62691AC4F47B0096B67D /* SLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLView.h; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/SLView.h; sourceTree = "<group>"; };
 		52FE626A1AC4F47B0096B67D /* SLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLView.m; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/SLView.m; sourceTree = "<group>"; };
 		52FE626B1AC4F47B0096B67D /* HZIPPageViewSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HZIPPageViewSelection.h; path = ../objc/ddyuanchuang/YuanChuang/YuanChuang/module/HZIPReader/Module/HZIPPageViewSelection.h; sourceTree = "<group>"; };
@@ -130,10 +155,25 @@
 				52120F2B1ABE6759005112C7 /* AppDelegate.m */,
 				52120F2D1ABE6759005112C7 /* ViewController.h */,
 				52120F2E1ABE6759005112C7 /* ViewController.m */,
+				52A6AEFD1AC7BE2000101A42 /* ViewController_Private.h */,
+				52A6AEFE1AC7BF0200101A42 /* ViewController+Gesture.h */,
+				52A6AEFF1AC7BF0200101A42 /* ViewController+Gesture.m */,
+				52A6AEFA1AC7BDB500101A42 /* ViewController+Mark.h */,
+				52A6AEFB1AC7BDB500101A42 /* ViewController+Mark.m */,
 				52120F301ABE6759005112C7 /* Main.storyboard */,
 				52120F331ABE6759005112C7 /* Images.xcassets */,
 				52120F351ABE6759005112C7 /* LaunchScreen.xib */,
 				52120F261ABE6759005112C7 /* Supporting Files */,
+				52A6AF011AC7DF2800101A42 /* DataSource.h */,
+				52A6AF021AC7DF2800101A42 /* DataSource.m */,
+				52590A9F1AC80F99002191ED /* DataSourceWorker.h */,
+				52590AA01AC80F99002191ED /* DataSourceWorker.m */,
+				52590AA21AC81010002191ED /* DataSourceRequest.h */,
+				52590AA31AC81010002191ED /* DataSourceRequest.m */,
+				52590AA51AC810AE002191ED /* AsynchronousData.h */,
+				52590AA61AC810AE002191ED /* AsynchronousData.m */,
+				52590AA81AC81110002191ED /* ContentLoader.h */,
+				52590AA91AC81110002191ED /* ContentLoader.m */,
 			);
 			path = FluzzView;
 			sourceTree = "<group>";
@@ -190,6 +230,8 @@
 			children = (
 				5228AA451ABE8D8D00C0525A /* UIView+LayoutChain.h */,
 				5228AA461ABE8D8D00C0525A /* UIView+LayoutChain.m */,
+				52A6AEE91AC7A5EC00101A42 /* UIPanGestureRecognizerEx.h */,
+				52A6AEEA1AC7A5EC00101A42 /* UIPanGestureRecognizerEx.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -417,14 +459,22 @@
 				5228AA471ABE8D8D00C0525A /* UIView+LayoutChain.m in Sources */,
 				5228AA4C1ABEC62D00C0525A /* PageView.m in Sources */,
 				7F4A48691ABF191E0034A8E9 /* FLuuziView+SwipeGesture.m in Sources */,
+				52590AAA1AC81110002191ED /* ContentLoader.m in Sources */,
 				52FE62701AC4F4B90096B67D /* NSObject+YCUserData.m in Sources */,
+				52590AA11AC80F99002191ED /* DataSourceWorker.m in Sources */,
 				52120F2F1ABE6759005112C7 /* ViewController.m in Sources */,
 				7F4A485E1ABF14630034A8E9 /* FLuuziPage.m in Sources */,
 				52FE626C1AC4F47B0096B67D /* SLView.m in Sources */,
+				52A6AF031AC7DF2800101A42 /* DataSource.m in Sources */,
 				52120F5F1ABE6905005112C7 /* FLuzzView.m in Sources */,
 				7F4A48661ABF190F0034A8E9 /* FLuuziView+PanGeture.m in Sources */,
 				52120F2C1ABE6759005112C7 /* AppDelegate.m in Sources */,
+				52590AA41AC81010002191ED /* DataSourceRequest.m in Sources */,
+				52A6AEEB1AC7A5EC00101A42 /* UIPanGestureRecognizerEx.m in Sources */,
 				7F4A48631ABF177D0034A8E9 /* FLuuziView+SlipMode.m in Sources */,
+				52590AA71AC810AE002191ED /* AsynchronousData.m in Sources */,
+				52A6AF001AC7BF0200101A42 /* ViewController+Gesture.m in Sources */,
+				52A6AEFC1AC7BDB500101A42 /* ViewController+Mark.m in Sources */,
 				7F4A485B1ABF14470034A8E9 /* FLuuziView+CardMode.m in Sources */,
 				52120F291ABE6759005112C7 /* main.m in Sources */,
 			);

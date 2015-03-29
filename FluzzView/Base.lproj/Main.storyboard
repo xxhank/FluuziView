@@ -34,7 +34,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Y4z-uD-aYo">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="1000" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4z-uD-aYo">
                                         <rect key="frame" x="69" y="8" width="214" height="31"/>
                                         <connections>
                                             <action selector="changeSectionCount:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1uL-f5-zuH"/>
@@ -60,7 +60,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="w79-j5-dA8">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w79-j5-dA8">
                                         <rect key="frame" x="69" y="8" width="214" height="31"/>
                                         <connections>
                                             <action selector="changePageCountInSection:" destination="vXZ-lx-hvc" eventType="valueChanged" id="tac-Z1-ZHj"/>
